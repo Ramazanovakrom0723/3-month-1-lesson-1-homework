@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    width: 500px;
+    height: 500px;
+    border: 2px solid crimson;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    background-color: chartreuse;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    animation-name: btn_animation ;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-direction: alternate;
+}
+
+
+@keyframes btn_animation {
+   0%{
+    transform: translate(0,0);
+   }
+   25%{
+    transform: translate(300px, 0) ;
+   }
+   50%{
+    transform: translate(300px, 300px) ;
+   }
+   75%{
+    transform: translate(0, 300px) ;
+   }
+   100%{
+    transform: translate(0,0);
+   }
+    
+}
